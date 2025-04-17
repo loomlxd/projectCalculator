@@ -1,0 +1,771 @@
+body {
+    font-family: "Inter Tight", sans-serif;
+    margin: 0;
+    /* background-color: rgb(247, 247, 234, 1); */
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.header-line {
+    height: 120px;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 1);
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+}
+
+.header-line.scrolled {
+    height: 90px;
+    background-color: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.puma-logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 200px;
+    margin-right: 160px;
+    transition: all 0.3s ease;
+}
+
+.puma-logo.scrolled-logo {
+    height: 80px;
+    width: 80px;
+}
+
+.search-basket {
+    margin: 0px 200px;
+}
+
+.search-png, .basket-png {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+}
+
+.more {
+    height: 23px;
+    width: 25px;
+    margin-right: 20px;
+    display: block;
+}
+.more2 {
+    height: 23px;
+    width: 25px;
+    margin-right: 20px;
+    display: none;
+}
+
+.catalog {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-right: 85px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.top-line {
+    position: fixed;
+    height: 2px;
+    background-color: chocolate;
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    pointer-events: none;
+    transition: transform 0.2s ease;
+    z-index: 1001;
+}
+
+.about-us {
+    text-decoration: none;
+    color: black;
+    margin-right: 85px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.review {
+    text-decoration: none;
+    color: black;
+    margin-right: 170px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.number {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.number span {
+    color: chocolate;
+}
+
+.number:hover {
+    text-decoration: underline;
+}
+
+.search-png { 
+    cursor: pointer;
+}
+
+.basket-png {
+    cursor: pointer;
+}
+
+.header-content {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1200px;
+    height: 730px;
+    margin: 0px auto; /* чтобы сам блок был по центру страницы */
+    overflow: hidden;
+}
+
+.shues-items a {
+    text-decoration: none;
+}
+
+.shues-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* чтобы фон был точно по центру */
+    z-index: 0;
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    transition: all 0.3s ease;
+}
+
+.shue1 {
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+    left:0px;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+    z-index: 800;
+}
+
+.shue1:hover {
+    scale: 1.1;
+}
+
+.shue2 {
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    bottom: 20px;
+    left:150px;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+    z-index: 800;
+}
+.shue2:hover {
+    scale: 1.1;
+}
+
+.shue3 {
+    height: 700px;
+    width: 450px;
+    position: absolute;
+    bottom: 25px;
+    left:350px;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+    z-index: 800;
+}
+.shue3:hover {
+    scale: 1.1;
+}
+
+.shue4 {
+    height: 700px;
+    width: 450px;
+    position: absolute;
+    bottom: 60px;
+    left: 550px;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+    z-index: 800;
+}
+.shue4:hover {
+    scale: 1.1;
+}
+
+.shue5 {
+    height: 700px;
+    width: 450px;
+    position: absolute;
+    bottom: 100px;
+    left: 750px;
+    transition: scale 0.3s ease;
+    cursor: pointer;
+    z-index: 800;
+}
+.shue5:hover {
+    scale: 1.1;
+}
+
+.new-col {
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 190px;
+    z-index: 801;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.new-col2 {
+    right: 0;
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 190px;
+    z-index: 801;
+    transition: all 0.3s ease;
+}
+
+.shues-url {
+    position: absolute;
+    text-decoration: underline;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px 40px;
+    background-color: chocolate;
+    pointer-events: all;
+    z-index: 803;
+    justify-content: center;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease;
+}
+
+.shues-url:hover {
+    background-color: black;
+    font-size: 18px;
+}
+
+.shues-url:active {
+    text-decoration: none;
+}
+
+.puma-loomlxd {
+    position: absolute;
+    right: 0;
+    bottom: 230px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 802;
+}
+.carusel-page {
+    display: flex;
+    position: relative;
+}
+
+.carusel {
+    width: 1100px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-left: 250px;
+    scroll-behavior: smooth;
+    margin-bottom: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* scroll-padding: 0 50px; */
+}
+
+.carusel > .carusel-block, .carusel2-block, .carusel3-block, .carusel4-block, .carusel5-block {
+    scroll-snap-align: center;
+}
+
+.promotion {
+    font-family: "Balsamiq Sans", sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    background-color: chocolate;
+    padding: 5px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+}
+
+.buttons-next-prev {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+
+.btn-text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 150px;
+}
+
+.btn-text div {
+    color: chocolate;
+    padding-top: 20px;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.palka {
+    width: 1px;
+    height: 35px;
+    background-color: grey;
+    opacity: 0.5;
+    margin: 0px 20px;
+}
+
+.btn-next {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-next:hover {
+    border-right: 2px solid chocolate;
+    border-bottom: 2px solid chocolate;
+}
+.btn-next:active {
+    /* transform: translateX(10px); */
+    translate: 1rem;
+}
+
+.btn-prev {
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-prev:hover {
+    border-left: 2px solid chocolate;
+    border-bottom: 2px solid chocolate;
+}
+.btn-prev:active {
+    /* transform: translateX(-10px); */
+    translate: -1rem;
+}
+
+.carusel-block, .carusel2-block, .carusel3-block, .carusel4-block, .carusel5-block {
+    height: 550px;
+    width: 300px;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin: 100px 30px 20px 30px;
+}
+
+.carusel-block:hover, .carusel2-block:hover, .carusel3-block:hover, .carusel4-block:hover, .carusel5-block:hover {
+    outline: 1px solid gray;
+}
+
+.carusel-photo, .carusel2-photo, .carusel3-photo, .carusel4-photo, .carusel5-photo {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carusel-photo img, .carusel2-photo img {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carusel-photo img.active, .carusel2-photo img.active {
+    opacity: 1;
+}
+
+.carusel3-photo img, .carusel4-photo img, .carusel5-photo img {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.colors-blocks, .colors-blocks2, .colors-blocks3, .colors-blocks4, .colors-blocks5 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.block-mentol-green4 {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(63, 184, 123);
+    margin-right: 10px;
+    cursor: pointer;
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.block-green2 {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(67, 100, 74);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.block-green2:hover {
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.block-white, .block-white2, .block-white5 {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(221, 221, 221);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.block-white:hover, .block-white2:hover, .block-white5 {
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.block-black, .block-black2, .block-black3 {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.block-black:hover, .block-black2:hover, .block-black3 {
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.block-pink {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(211, 160, 168);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.block-pink:hover {
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.block-light-blue {
+    height: 30px;
+    width: 30px;
+    background-color: lightblue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.block-light-blue:hover {
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.carusel-text-name {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding: 30px 23px;
+}
+
+.price {
+    display: flex;
+    padding: 10px 23px;
+}
+
+.price-rel {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.price-act {
+    margin-left: 40px;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+  
+.footer-page {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 0.6s ease-out;
+    z-index: 999;
+    margin-top: 20px;
+    background-color: rgb(238, 240, 232);
+}
+
+.social-text {
+    font-family: "Balsamiq Sans", sans-serif;
+    margin-bottom: 20px;
+
+}
+.social-img {
+    display: flex;
+    gap: 30px;
+}
+.social-img img {
+    height: 30px;
+    width: 30px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.img-inst:hover {
+    filter: grayscale(0);
+    scale: 1.2;
+    filter: drop-shadow(0 0 15px rgb(212, 96, 168));
+}
+.img-yt:hover {
+    filter: grayscale(0);
+    scale: 1.2;
+    filter: drop-shadow(0 0 15px rgb(209, 83, 83));
+}
+.img-tl:hover {
+    filter: grayscale(0);
+    scale: 1.2;
+    filter: drop-shadow(0 0 15px rgb(75, 167, 204));
+}
+
+.social-img a {
+    text-decoration: none;
+}
+
+.social {
+    display: block;
+    padding-top: 20px;
+}
+
+.shue-page {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 2s ease;
+}
+.shue-page.activepink {
+    background-color: pink;
+}
+.shue-page.activebeige {
+    background-color: beige;
+}
+.shue-page.activegreen {
+    background-color: rgb(63, 184, 123);
+}
+
+.shue-puma-logo {
+    height: 125px;
+    width: 125px;
+    left: 100px;
+    top: 70px;
+    position: absolute;
+    z-index: 100;
+}
+
+.shue-name {
+    font-size: 45px;
+    font-weight: 700;
+    top: 45vh;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+}
+
+.shue-price {
+    font-size: 30px;
+    font-weight: 400;
+    top: 60vh;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+}
+
+.shue-blocks {
+    display: flex;
+    bottom: 70px;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+}
+
+.shue-block-pink {
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+    margin-right: 40px;
+    cursor: pointer;
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+.shue-block-beige {
+    height: 40px;
+    width: 40px;
+    background-color: beige;
+    margin-right: 40px;
+    cursor: pointer;
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+
+.shue-block-mentol-green {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(63, 184, 123);
+    margin-right: 40px;
+    cursor: pointer;
+    outline: 1px solid gray;
+    outline-offset: 3px;
+}
+.shue-img {
+    position: relative;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    pointer-events: none; 
+    z-index: 200;
+}
+
+.shue-slider-pink,
+.shue-slider-beige,
+.shue-slider-green {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    margin: 20vh 20vh 20vh 80vh;
+    transform: translateX(200%);
+    filter: drop-shadow(0 0 0px rgb(255, 255, 255));
+    transition: transform 1s ease, filter 2s ease;
+    z-index: 200;
+}
+
+.shue-slider-pink.active {
+    transform: translateX(0);
+    filter: drop-shadow(0 0 180px rgb(255, 255, 255));
+}
+.shue-slider-beige.active {
+    transform: translateX(0);
+    filter: drop-shadow(0 0 180px rgb(255, 255, 255));
+}
+.shue-slider-green.active {
+    transform: translateX(0);
+    filter: drop-shadow(0 0 180px rgb(255, 255, 255));
+}
+
+.background-info {
+    height: 100vh;
+    width: 520px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+    z-index: 0;
+}
+
+.backgroud-text-P {
+    position: absolute;
+    font-family: "Jaldi", sans-serif;
+    font-size: 400px;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    margin: 17vh 20vh 20vh 81vh;
+    color: rgb(255, 255, 255);
+    z-index: 199;
+}
+
+.backgroud-text-U {
+    position: absolute;
+    font-family: "Jaldi", sans-serif;
+    font-size: 400px;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    margin: 17vh 20vh 20vh 101vh;
+    color: rgb(255, 255, 255);
+    z-index: 201;
+}
+
+.backgroud-text-M {
+    position: absolute;
+    font-family: "Jaldi", sans-serif;
+    font-size: 400px;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    margin: 17vh 20vh 20vh 125vh;
+    color: rgb(255, 255, 255);
+    z-index: 199;
+}
+
+.backgroud-text-A {
+    position: absolute;
+    font-family: "Jaldi", sans-serif;
+    font-size: 400px;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    margin: 17vh 20vh 20vh 155vh;
+    color: rgb(255, 255, 255);
+    z-index: 201;
+}

@@ -1,0 +1,204 @@
+@import 'normalize.css';
+@import 'variabless.scss';
+
+body {
+    background-color: rgb(46, 44, 61);
+    font-family: "Funnel Display", sans-serif;
+}
+
+.background-calc {
+    background-color: rgb(197, 197, 197);
+    height: 900px;
+    width: 600px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    margin: 5vh auto;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.up-calc {
+    height: 200px;
+    width: 550px;
+    background-color: rgb(114, 114, 114);
+    border-radius: 20px;
+    margin: 50px auto;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.all-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.center-calc {
+    height: 200px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.seven-btn, 
+.eight-btn, 
+.nine-btn, 
+.four-btn, 
+.five-btn, 
+.six-btn, 
+.one-btn, 
+.two-btn, 
+.three-btn,
+.zero-btn, 
+.dbzero-btn, 
+.dot-btn {
+    font-size: 40px;
+    font-weight: 500;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.C-button {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.seven-btn, .eight-btn, .nine-btn {
+    grid-row-start: 2;
+}
+
+.four-btn, .five-btn, .six-btn {
+    grid-row-start: 3;
+}
+
+.one-btn, .two-btn, .three-btn {
+    grid-row-start: 4;
+}
+
+.zero-btn, .dbzero-btn, .dot-btn {
+    grid-row-start: 5;
+}
+
+.center-calc div:hover {
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.center-calc div:active {
+    transform: scale(0.95);
+}
+
+
+.right-calc {
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    gap: 20px;
+    margin-top: 150px;
+}
+
+.multiply-btn, 
+.divide-btn, 
+.minus-btn,
+.plus-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: rgb(238, 238, 238);
+    padding: 15px 30px;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.multiply-btn.disabled, .divide-btn.disabled, .plus-btn.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: rgb(192, 167, 167);
+}
+
+.equals-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 114, 114);
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    grid-column: span 2;
+    transition: transform 0.2s ease;
+}
+
+.right-calc div:hover {
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.right-calc div:active {
+    transform: scale(0.95);
+}
+
+.fade {
+    animation: fadeEffect 0.3s ease;
+  }
+  
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0.2;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  };
+
+.shake {
+    animation: shakin 0.3s ease;;
+}
+
+@keyframes shakin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(10deg);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    75% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
