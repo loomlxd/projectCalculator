@@ -138,7 +138,6 @@ body {
 
 .multiply-btn.disabled, .divide-btn.disabled, .plus-btn.disabled {
     pointer-events: none;
-    cursor: not-allowed;
     background-color: rgb(192, 167, 167);
 }
 
